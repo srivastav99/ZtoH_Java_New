@@ -30,8 +30,8 @@ public class TreeSet1 {
 		ts1.add(56);
 		ts1.add(78);
 	
-		ts1.retainAll(ts);//This method only stores data that are same inside 
-		System.out.println("After retaining values that are same in both ts and ts1 inside ts1, HashSet ts1 elements:"+ts1);
+		ts1.retainAll(ts);//This method only stores data that is same inside both TreeSets
+		System.out.println("After retaining values that are same in both ts and ts1 inside ts1, Treesets ts1 elements:"+ts1);
 		ts1.add(56);
 		ts1.add(78);
 		
@@ -48,11 +48,13 @@ public class TreeSet1 {
 		
 		System.out.println("TreeSet s and TreeSet s1 equal:"+ts.equals(ts1));//Checks if both TreeSets are equals or not(checks all values in TreeSets)
 		
+		System.out.println(ts.contains(12));//This method checks if the given value is present inside Treeset or not
 		/*
 		ts.clear();//Clears all the data inside the TreeSet
 		System.out.println("After using clear method, TreeSet ts:"+ts);
 		System.out.println("Length of TreeSet ts after using clear method:"+ts.size());
 		*/
+		
 	}
 	
 

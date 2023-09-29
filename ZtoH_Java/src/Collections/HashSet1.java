@@ -35,7 +35,7 @@ public class HashSet1 {
 		s1.add(56);
 		s1.add(78);
 	
-		s1.retainAll(s);//This method only stores data that are same inside 
+		s1.retainAll(s);//This method only stores data that is same inside both HashSets
 		System.out.println("After retaining values that are same in both s and s1 inside s1, HashSet s1 elements:"+s1);
 		s1.add(56);
 		s1.add(78);
@@ -56,7 +56,7 @@ public class HashSet1 {
 		System.out.println("After using clear method, HashSet s:"+s);
 		System.out.println("Length of HashSet s after using clear method:"+s.size());
 		*/
-		
+		System.out.println(s.contains(34));//This method checks if the given value is present inside HashSet or not
 		System.out.println("HashSet s and HashSet s1 equal:"+s.equals(s1));//Checks if both HashSets are equals or not(checks all values in HashSets)
 		
 	}
