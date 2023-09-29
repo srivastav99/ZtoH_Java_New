@@ -9,11 +9,11 @@ public class ClassFileWriter {
 
 	public static void main(String[] args) throws IOException {
 		
-		File f = new File("C:\\Users\\pc\\OneDrive\\Desktop\\file\\FileWriter");
+		File f = new File("D:\\Users\\Srivastav\\Desktop\\one drive\\OneDrive\\Desktop\\file\\FileWriter");
 
 		f.mkdir();
 		
-		File f1 = new File("C:\\\\Users\\\\pc\\\\OneDrive\\\\Desktop\\\\file\\\\FileWriter\\FileWriter.txt");
+		File f1 = new File("D:\\\\Users\\\\Srivastav\\\\Desktop\\\\one drive\\\\OneDrive\\\\Desktop\\\\file\\\\FileWriter\\FileWriter.txt");
 		
 		f1.createNewFile();
 		
