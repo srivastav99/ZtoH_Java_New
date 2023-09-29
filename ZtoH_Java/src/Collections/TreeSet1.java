@@ -2,13 +2,14 @@ package Collections;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.SortedSet;
 import java.util.TreeSet;
 
 public class TreeSet1 {
 
 	public static void main(String[] args) {
 		
-		Set<Integer> ts = new TreeSet<Integer>();
+		SortedSet<Integer> ts = new TreeSet<Integer>();
 		System.out.println("Size of TreeSet ts at start:"+ts.size());
 		
 		ts.add(565);
@@ -29,7 +30,7 @@ public class TreeSet1 {
 		ts1.add(23);
 		ts1.add(56);
 		ts1.add(78);
-	
+		
 		ts1.retainAll(ts);//This method only stores data that is same inside both TreeSets
 		System.out.println("After retaining values that are same in both ts and ts1 inside ts1, Treesets ts1 elements:"+ts1);
 		ts1.add(56);
@@ -48,7 +49,11 @@ public class TreeSet1 {
 		
 		System.out.println("TreeSet s and TreeSet s1 equal:"+ts.equals(ts1));//Checks if both TreeSets are equals or not(checks all values in TreeSets)
 		
-		System.out.println(ts.contains(12));//This method checks if the given value is present inside Treeset or not
+		System.out.println(ts.contains(12));//This method checks if the given value is present inside TreeSet or not
+		
+		System.out.println("First element in the TreeSet:"+ts.first());//Gives the first element in the TreeSet
+		
+		System.out.println("Last element in the TreeSet:"+ts.last());//Gives the last element in the TreeSet
 		/*
 		ts.clear();//Clears all the data inside the TreeSet
 		System.out.println("After using clear method, TreeSet ts:"+ts);

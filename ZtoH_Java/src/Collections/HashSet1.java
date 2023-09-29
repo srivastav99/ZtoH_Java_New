@@ -48,7 +48,7 @@ public class HashSet1 {
 		System.out.println("HashSet contains 26:"+s.contains(26));
 		
 		s.remove(26);//Here we are removing value by directly giving number whereas in ArrayList we have to remove through index.
-	
+		
 		System.out.println("HashSet s after removing number 26 :"+s);
 		
 		/*
