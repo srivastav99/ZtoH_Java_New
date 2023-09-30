@@ -51,13 +51,22 @@ public class HashSet1 {
 		
 		System.out.println("HashSet s after removing number 26 :"+s);
 		
+		System.out.println(s.contains(34));//This method checks if the given value is present inside HashSet or not
+		
+		System.out.println("HashSet s and HashSet s1 equal:"+s.equals(s1));//Checks if both HashSets are equals or not(checks all values in HashSets)
+		
+		System.out.println("Hash code of HashSet s:"+s.hashCode());//Gives Hash code of HashSet
+		
+		System.out.println("Is the HashSet s empty:"+s.isEmpty());//Checks if given HashSet is empty or not
+		
+		
+		
 		/*
 		s.clear();//Clears all the data inside the HashSet
 		System.out.println("After using clear method, HashSet s:"+s);
 		System.out.println("Length of HashSet s after using clear method:"+s.size());
 		*/
-		System.out.println(s.contains(34));//This method checks if the given value is present inside HashSet or not
-		System.out.println("HashSet s and HashSet s1 equal:"+s.equals(s1));//Checks if both HashSets are equals or not(checks all values in HashSets)
+		
 		
 	}
 

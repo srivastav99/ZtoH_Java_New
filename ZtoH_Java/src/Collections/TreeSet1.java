@@ -54,6 +54,13 @@ public class TreeSet1 {
 		System.out.println("First element in the TreeSet:"+ts.first());//Gives the first element in the TreeSet
 		
 		System.out.println("Last element in the TreeSet:"+ts.last());//Gives the last element in the TreeSet
+		
+		System.out.println("Hash code of TreeSet ts:"+ts.hashCode());//Gives Hash code of TreeSet
+		
+		System.out.println("Is the TreeSet ts empty:"+ts.isEmpty());//Checks if given TreeSet is empty or not
+		
+		
+		
 		/*
 		ts.clear();//Clears all the data inside the TreeSet
 		System.out.println("After using clear method, TreeSet ts:"+ts);
