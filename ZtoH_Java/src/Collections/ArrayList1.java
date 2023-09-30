@@ -52,14 +52,27 @@ public class ArrayList1 {
 		
 		System.out.println("ArrayList contains 26:"+a.contains(26));
 		
+		//Checks if both ArrayLists are equals or not(checks all values in ArrayLists)
+		System.out.println("ArrayList a and ArrayList a1 equal:"+a.equals(a1));
+		
 		System.out.println(a.contains(12));//This method checks if the given value is present inside ArrayList or not
+		System.out.println("Value at 0th index:"+a.get(0));//Gets the element present at the given index(in this case 0th index 23 is present)
+		System.out.println("Value 23 occurs first at index:"+a.indexOf(23));//Gets the index of element given at its first occurrence(in this case 23 is at 0th and 1st index and thus it returns 0)
+		System.out.println("Value 45 occurs first at index:"+a.indexOf(45));
+		System.out.println("Value 23 occurs last at index:"+a.lastIndexOf(23));//Gets the index of element given at its last occurrence(in this case 23 is at 0th,1st and 5th index and thus it returns 5)
+		System.out.println("Is the list empty:"+a.isEmpty());//Checks if given list is empty or not
+		System.out.println("Hash code of ArrayList a:"+a.hashCode());
+		System.out.println("Runtime class of Object a:"+a.getClass());//Returns Runtime class of specified Object
+		
+		
+		
 		/*
 		a.clear();//Clears all the data inside the ArrayList
 		System.out.println("After using clear method, ArrayList a:"+a);
 		System.out.println("Length of ArrayList a after using clear method:"+a.size());
 		*/
 		//If we make object of ArrayList like ArrayList<Integer> ar = new ArrayList<Integer>(); then methods like .clone() and .reverseAll() .get() will be available as the methods are present in ArrayList class and not in List interface.
-		System.out.println("ArrayList a and ArrayList a1 equal:"+a.equals(a1));//Checks if both ArrayLists are equals or not(checks all values in ArrayLists)
+		
 		
 	}
 
