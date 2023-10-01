@@ -9,10 +9,10 @@ public class HashMapStudent {
 
 		Map<Integer, StudentData> c1 = new HashMap(); //HashMap to handle first class
 
-		//s1,s2,s3,s4 are object representing each student of First class
+		//sc1c1s1,sc1c1s2,sc1c1s3,sc1c1s4 are object representing each student of First class
 		StudentData sc1c1s1 = new StudentData();
 		sc1c1s1.name = "FirstClassaaaaa"; //Giving name for a student of First class
-		c1.putIfAbsent(1, sc1c1s1); //Storing student name with roll.no as 1 into the  HashMap m. 
+		c1.putIfAbsent(1, sc1c1s1); //Storing student name with roll.no as 1 into the HashMap c1. 
 		
 		StudentData sc1c1s2 = new StudentData();
 		sc1c1s2.name = "FirstClassbbbbb";
@@ -26,12 +26,12 @@ public class HashMapStudent {
 		sc1c1s4.name = "FirstClassddddd";
 		c1.putIfAbsent(4, sc1c1s4);
 
-		Map<String, Map<Integer, StudentData>> sc1 = new HashMap<String, Map<Integer, StudentData>>();//HashMap to handle classes(of a school)
+		Map<String, Map<Integer, StudentData>> sc1 = new HashMap<String, Map<Integer, StudentData>>();//HashMap to handle classes(HashMap of school)
 
-		sc1.put("FirstStandard", c1);//putting(relating) HashMap mfc(first class student details) in HashMap m
+		sc1.put("FirstStandard", c1);//putting(relating) HashMap c1(first class student details) in HashMap sc1(school hashMap)
 
 		Map<Integer, StudentData> c2 = new HashMap();//HashMap to handle second class
-		//ss1,ss2,ss3,ss4 are object representing each student of Second class
+		//sc1c2s1,sc1c2s2,sc1c2s3,sc1c2s4 are object representing each student of Second class
 		StudentData sc1c2s1 = new StudentData();
 		sc1c2s1.name = "SecondClassaaaa";
 		c2.putIfAbsent(01, sc1c2s1);
@@ -48,7 +48,7 @@ public class HashMapStudent {
 		sc1c2s4.name = "SecondClassddddd";
 		c2.putIfAbsent(04, sc1c2s4);
 
-		sc1.putIfAbsent("SecondStandard", c2); //putting(relating) HashMap msc(second class student details) in HashMap m
+		sc1.putIfAbsent("SecondStandard", c2); //putting(relating) HashMap c2(second class student details) in HashMap sc1(HashMap of school)
 
 		/*
 		for (String classname : m.keySet()) {

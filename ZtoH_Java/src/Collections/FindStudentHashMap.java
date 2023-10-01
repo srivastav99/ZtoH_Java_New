@@ -17,6 +17,7 @@ Total of 8 schools in the particular order as mentioned above.
 Each school contains 2 classes(First Standard, Second Standard)
 Each class contains 4 students each. Thus 64 students in the country(country = 2 states - 4 districts - 8 schools - 16 classes - 16*4=64 students)   
 The students roll numbers are from 1 to 64.
+
 */
 public class FindStudentHashMap {
 
@@ -423,17 +424,17 @@ public class FindStudentHashMap {
 		for (String stateName : co.keySet()) { // country
 
 			if (stateName == "TS") { // state 1
-				Map<String, Map<String, Map<String, Map<Integer, StudentData>>>> codata = co.get(stateName);
+				//Map<String, Map<String, Map<String, Map<Integer, StudentData>>>> codata = co.get(stateName);//This line is not required it is only requited if we need to take out data from co HashMapmap
 
 				for (String districtName : st1.keySet()) {
 
 					if (districtName == "Medchal") { // district 1
-						//Map<String, Map<String, Map<Integer, StudentData>>> d1data = st1.get(districtName);
+						//Map<String, Map<String, Map<Integer, StudentData>>> d1data = st1.get(districtName);//This line is not required it is only requited if we need to take out data from st1 HashMapmap
 
 						for (String schoolName : st1d1.keySet()) {
 							if (schoolName == "Indian Batting school") { // school1
 
-								//Map<String, Map<Integer, StudentData>> sc1data = st1d1.get(schoolName);
+								//Map<String, Map<Integer, StudentData>> sc1data = st1d1.get(schoolName);//This line is not required it is only requited if we need to take out data from st1d1 HashMapmap
 
 								for (String className : st1d1sc1.keySet()) {
 									if (className == "First Standard") { // class 1

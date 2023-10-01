@@ -9,10 +9,10 @@ public class HashMapStudentPro {
 
 		// School 1 (district 1 of state 1 of country)
 		Map<Integer, StudentData> st1d1sc1c1 = new HashMap(); // HashMap to handle first class
-
+		// sc1c1s1,sc1c1s2,sc1c1s3,sc1c1s4 are object representing each student of First class
 		StudentData sc1c1s1 = new StudentData();
 		sc1c1s1.name = "Rohit"; // Giving name for a student of First class
-		st1d1sc1c1.putIfAbsent(1, sc1c1s1); // Storing student name with roll.no as 1 into the HashMap m.
+		st1d1sc1c1.putIfAbsent(1, sc1c1s1); // Storing student name with roll.no into the HashMap st1d1sc1c1.
 
 		StudentData sc1c1s2 = new StudentData();
 		sc1c1s2.name = "Kohli";
@@ -31,11 +31,11 @@ public class HashMapStudentPro {
 																											// classes(of
 																											// a school)
 
-		st1d1sc1.put("FirstStandard", st1d1sc1c1);// putting(relating) HashMap mfc(first class student details) in
-													// HashMap m
+		st1d1sc1.put("FirstStandard", st1d1sc1c1);// putting(relating) HashMap st1d1sc1c1(first class student details) in
+													// HashMap st1d1sc1(first school HashMap)
 
 		Map<Integer, StudentData> st1d1sc1c2 = new HashMap();// HashMap to handle second class
-		// ss1,ss2,ss3,ss4 are object representing each student of Second class
+		// sc1c2s1,sc1c2s2,sc1c2s3,sc1c2s4 are object representing each student of Second class
 		StudentData sc1c2s1 = new StudentData();
 		sc1c2s1.name = "Rinku";
 		st1d1sc1c2.putIfAbsent(5, sc1c2s1);
@@ -52,9 +52,8 @@ public class HashMapStudentPro {
 		sc1c2s4.name = "Shaw";
 		st1d1sc1c2.putIfAbsent(8, sc1c2s4);
 
-		st1d1sc1.putIfAbsent("SecondStandard", st1d1sc1c2); // putting(relating) HashMap msc(second class student
-															// details) in
-		// HashMap m
+		st1d1sc1.putIfAbsent("SecondStandard", st1d1sc1c2); // putting(relating) HashMap st1d1sc1c2(second class student
+															// details) in HashMap st1d1sc1(School 1 HashMap)
 
 		Map<String, Map<String, Map<Integer, StudentData>>> st1d1 = new HashMap<String, Map<String, Map<Integer, StudentData>>>();// district
 																																	// HashMap
@@ -66,7 +65,7 @@ public class HashMapStudentPro {
 
 		StudentData sc2c1s1 = new StudentData();
 		sc2c1s1.name = "Chahal"; // Giving name for a student of First class
-		st1d1sc2c1.putIfAbsent(9, sc2c1s1); // Storing student name with roll.no as 1 into the HashMap m.
+		st1d1sc2c1.putIfAbsent(9, sc2c1s1); 
 
 		StudentData sc2c1s2 = new StudentData();
 		sc2c1s2.name = "Kuldeep";
@@ -85,11 +84,9 @@ public class HashMapStudentPro {
 																											// classes(of
 																											// a school)
 
-		st1d1sc2.put("FirstStandard", st1d1sc2c1);// putting(relating) HashMap mfc(first class student details) in
-													// HashMap m
-
+		st1d1sc2.put("FirstStandard", st1d1sc2c1);
 		Map<Integer, StudentData> st1d1sc2c2 = new HashMap();// HashMap to handle second class
-		// ss1,ss2,ss3,ss4 are object representing each student of Second class
+		
 		StudentData sc2c2s1 = new StudentData();
 		sc2c2s1.name = "Bumrah";
 		st1d1sc2c2.putIfAbsent(13, sc2c2s1);
@@ -106,8 +103,7 @@ public class HashMapStudentPro {
 		sc2c2s4.name = "Siraj";
 		st1d1sc2c2.putIfAbsent(16, sc2c2s4);
 
-		st1d1sc2.putIfAbsent("SecondStandard", st1d1sc2c2); // putting(relating) HashMap msc(second class student
-															// details) in HashMap m
+		st1d1sc2.putIfAbsent("SecondStandard", st1d1sc2c2);
 
 		st1d1.putIfAbsent("Indian Bowling school", st1d1sc2);
 
@@ -120,7 +116,7 @@ public class HashMapStudentPro {
 
 		StudentData sc3c1s1 = new StudentData();
 		sc3c1s1.name = "Jadeja"; // Giving name for a student of First class
-		st1d2sc3c1.putIfAbsent(17, sc3c1s1); // Storing student name with roll.no as 1 into the HashMap m.
+		st1d2sc3c1.putIfAbsent(17, sc3c1s1); 
 
 		StudentData sc3c1s2 = new StudentData();
 		sc3c1s2.name = "Ashwin";
@@ -139,11 +135,10 @@ public class HashMapStudentPro {
 																											// classes(of
 																											// a school)
 
-		st1d2sc3.put("FirstStandard", st1d2sc3c1);// putting(relating) HashMap mfc(first class student details) in
-													// HashMap m
+		st1d2sc3.put("FirstStandard", st1d2sc3c1);
 
 		Map<Integer, StudentData> st1d2sc3c2 = new HashMap();// HashMap to handle second class
-		// ss1,ss2,ss3,ss4 are object representing each student of Second class
+		
 		StudentData sc3c2s1 = new StudentData();
 		sc3c2s1.name = "Hardik";
 		st1d2sc3c2.putIfAbsent(21, sc3c2s1);
@@ -160,8 +155,7 @@ public class HashMapStudentPro {
 		sc3c2s4.name = "Chahar";
 		st1d2sc3c2.putIfAbsent(24, sc3c2s4);
 
-		st1d2sc3.putIfAbsent("SecondStandard", st1d2sc3c2); // putting(relating) HashMap msc(second class student
-															// details) in HashMap m
+		st1d2sc3.putIfAbsent("SecondStandard", st1d2sc3c2); 
 
 		Map<String, Map<String, Map<Integer, StudentData>>> st1d2 = new HashMap<String, Map<String, Map<Integer, StudentData>>>();// district
 																																	// HashMap
@@ -173,7 +167,7 @@ public class HashMapStudentPro {
 
 		StudentData sc4c1s1 = new StudentData();
 		sc4c1s1.name = "Pant"; // Giving name for a student of First class
-		st1d2sc4c1.putIfAbsent(25, sc4c1s1); // Storing student name with roll.no as 1 into the HashMap m.
+		st1d2sc4c1.putIfAbsent(25, sc4c1s1);
 
 		StudentData sc4c1s2 = new StudentData();
 		sc4c1s2.name = "Rahul";
@@ -192,11 +186,9 @@ public class HashMapStudentPro {
 																											// classes(of
 																											// a school)
 
-		st1d2sc4.put("FirstStandard", st1d2sc4c1);// putting(relating) HashMap mfc(first class student details) in
-													// HashMap m
-
+		st1d2sc4.put("FirstStandard", st1d2sc4c1);
 		Map<Integer, StudentData> st1d2sc4c2 = new HashMap();// HashMap to handle second class
-		// ss1,ss2,ss3,ss4 are object representing each student of Second class
+		
 		StudentData sc4c2s1 = new StudentData();
 		sc4c2s1.name = "Bharat";
 		st1d2sc4c2.putIfAbsent(29, sc4c2s1);
@@ -213,8 +205,7 @@ public class HashMapStudentPro {
 		sc4c2s4.name = "Jagdeeshan";
 		st1d2sc4c2.putIfAbsent(32, sc4c2s4);
 
-		st1d2sc4.putIfAbsent("SecondStandard", st1d2sc4c2); // putting(relating) HashMap msc(second class student
-															// details) in HashMap m
+		st1d2sc4.putIfAbsent("SecondStandard", st1d2sc4c2); 
 
 		st1d2.putIfAbsent("Indian WK school", st1d2sc4);
 
@@ -229,7 +220,7 @@ public class HashMapStudentPro {
 
 		StudentData sc5c1s1 = new StudentData();
 		sc5c1s1.name = "Warner"; // Giving name for a student of First class
-		st2d1sc5c1.putIfAbsent(33, sc5c1s1); // Storing student name with roll.no as 1 into the HashMap m.
+		st2d1sc5c1.putIfAbsent(33, sc5c1s1); 
 
 		StudentData sc5c1s2 = new StudentData();
 		sc5c1s2.name = "Smith";
@@ -248,11 +239,10 @@ public class HashMapStudentPro {
 																											// classes(of
 																											// a school)
 
-		st2d1sc5.put("FirstStandard", st2d1sc5c1);// putting(relating) HashMap mfc(first class student details) in
-													// HashMap m
+		st2d1sc5.put("FirstStandard", st2d1sc5c1);
 
 		Map<Integer, StudentData> st2d1sc5c2 = new HashMap();// HashMap to handle second class
-		// ss1,ss2,ss3,ss4 are object representing each student of Second class
+		
 		StudentData sc5c2s1 = new StudentData();
 		sc5c2s1.name = "Malan";
 		st2d1sc5c2.putIfAbsent(37, sc5c2s1);
@@ -269,8 +259,7 @@ public class HashMapStudentPro {
 		sc5c2s4.name = "Miller";
 		st2d1sc5c2.putIfAbsent(40, sc5c2s4);
 
-		st2d1sc5.putIfAbsent("SecondStandard", st2d1sc5c2); // putting(relating) HashMap msc(second class student
-															// details) in HashMap m
+		st2d1sc5.putIfAbsent("SecondStandard", st2d1sc5c2); 
 
 		Map<String, Map<String, Map<Integer, StudentData>>> st2d1 = new HashMap<String, Map<String, Map<Integer, StudentData>>>();// district
 																																	// HashMap
@@ -282,7 +271,7 @@ public class HashMapStudentPro {
 
 		StudentData sc6c1s1 = new StudentData();
 		sc6c1s1.name = "Stark"; // Giving name for a student of First class
-		st2d1sc6c1.putIfAbsent(41, sc6c1s1); // Storing student name with roll.no as 1 into the HashMap m.
+		st2d1sc6c1.putIfAbsent(41, sc6c1s1); 
 
 		StudentData sc6c1s2 = new StudentData();
 		sc6c1s2.name = "Wood";
@@ -301,11 +290,10 @@ public class HashMapStudentPro {
 																											// classes(of
 																											// a school)
 
-		st2d1sc6.put("FirstStandard", st2d1sc6c1);// putting(relating) HashMap mfc(first class student details) in
-													// HashMap m
+		st2d1sc6.put("FirstStandard", st2d1sc6c1);
 
 		Map<Integer, StudentData> st2d1sc6c2 = new HashMap();// HashMap to handle second class
-		// ss1,ss2,ss3,ss4 are object representing each student of Second class
+		
 		StudentData sc6c2s1 = new StudentData();
 		sc6c2s1.name = "Zampa";
 		st2d1sc6c2.putIfAbsent(45, sc6c2s1);
@@ -322,8 +310,7 @@ public class HashMapStudentPro {
 		sc6c2s4.name = "Rashid";
 		st2d1sc6c2.putIfAbsent(48, sc6c2s4);
 
-		st2d1sc6.putIfAbsent("SecondStandard", st2d1sc6c2); // putting(relating) HashMap msc(second class student
-															// details) in HashMap m
+		st2d1sc6.putIfAbsent("SecondStandard", st2d1sc6c2); 
 
 		st2d1.putIfAbsent("Foreign Bowling school", st2d1sc6);
 
@@ -337,7 +324,7 @@ public class HashMapStudentPro {
 
 		StudentData sc7c1s1 = new StudentData();
 		sc7c1s1.name = "Maxwell"; // Giving name for a student of First class
-		st2d2sc7c1.putIfAbsent(49, sc7c1s1); // Storing student name with roll.no as 1 into the HashMap m.
+		st2d2sc7c1.putIfAbsent(49, sc7c1s1); 
 
 		StudentData sc7c1s2 = new StudentData();
 		sc7c1s2.name = "Rashid Khan";
@@ -356,11 +343,10 @@ public class HashMapStudentPro {
 																											// classes(of
 																											// a school)
 
-		st2d2sc7.put("FirstStandard", st2d2sc7c1);// putting(relating) HashMap mfc(first class student details) in
-													// HashMap m
+		st2d2sc7.put("FirstStandard", st2d2sc7c1);
 
 		Map<Integer, StudentData> st2d2sc7c2 = new HashMap();// HashMap to handle second class
-		// ss1,ss2,ss3,ss4 are object representing each student of Second class
+		
 		StudentData sc7c2s1 = new StudentData();
 		sc7c2s1.name = "Stoinis";
 		st2d2sc7c2.putIfAbsent(53, sc7c2s1);
@@ -377,8 +363,7 @@ public class HashMapStudentPro {
 		sc7c2s4.name = "Sam";
 		st2d2sc7c2.putIfAbsent(56, sc7c2s4);
 
-		st2d2sc7.putIfAbsent("SecondStandard", st2d2sc7c2); // putting(relating) HashMap msc(second class student
-															// details) in HashMap m
+		st2d2sc7.putIfAbsent("SecondStandard", st2d2sc7c2); 
 
 		Map<String, Map<String, Map<Integer, StudentData>>> st2d2 = new HashMap<String, Map<String, Map<Integer, StudentData>>>();// district
 																																	// HashMap
@@ -391,7 +376,7 @@ public class HashMapStudentPro {
 
 		StudentData sc8c1s1 = new StudentData();
 		sc8c1s1.name = "Conway"; // Giving name for a student of First class
-		st2d2sc8c1.putIfAbsent(57, sc8c1s1); // Storing student name with roll.no as 1 into the HashMap m.
+		st2d2sc8c1.putIfAbsent(57, sc8c1s1); 
 
 		StudentData sc8c1s2 = new StudentData();
 		sc8c1s2.name = "Bairstow";
@@ -410,11 +395,9 @@ public class HashMapStudentPro {
 																											// classes(of
 																											// a school)
 
-		st2d2sc8.put("FirstStandard", st2d2sc8c1);// putting(relating) HashMap mfc(first class student details) in
-													// HashMap m
-
+		st2d2sc8.put("FirstStandard", st2d2sc8c1);
 		Map<Integer, StudentData> st2d2sc8c2 = new HashMap();// HashMap to handle second class
-		// ss1,ss2,ss3,ss4 are object representing each student of Second class
+		
 		StudentData sc8c2s1 = new StudentData();
 		sc8c2s1.name = "Carey";
 		st2d2sc8c2.putIfAbsent(61, sc8c2s1);
@@ -431,9 +414,7 @@ public class HashMapStudentPro {
 		sc8c2s4.name = "Quinton";
 		st2d2sc8c2.putIfAbsent(64, sc8c2s4);
 
-		st2d2sc8.putIfAbsent("SecondStandard", st2d2sc8c2); // putting(relating) HashMap msc(second class student
-															// details) in HashMap m
-
+		st2d2sc8.putIfAbsent("SecondStandard", st2d2sc8c2); 
 		st2d2.putIfAbsent("Foreign WK school", st2d2sc8);
 
 		st2.put("Prakasam", st2d2);
