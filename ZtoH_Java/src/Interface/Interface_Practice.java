@@ -12,12 +12,12 @@ interface A{
 	//void method4();
 	
 	default void m1() { //
-		System.out.println("sdwefserf");
+		System.out.println("default interface m1");
 		m2();
 		
 	}
 	static void m2() {
-		System.out.println("sdw");
+		System.out.println("static interface m2");
 	}
 	
 	public default void m3() { //
