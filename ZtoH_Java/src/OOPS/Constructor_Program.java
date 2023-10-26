@@ -23,6 +23,7 @@ public class Constructor_Program {
 		
 	}
 	
+	 // we cannot create a static constructor(only public, protected, private is allowed) or a duplicate constructor
 	 /*
 	 static Constructor_Program() {
 		System.out.println("default constructor");

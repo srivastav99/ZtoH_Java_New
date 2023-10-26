@@ -38,12 +38,15 @@ class cc1 {
 		
 		catch(NullPointerException ex )
 		{
+			
 			System.out.println(ex.getMessage());
+			
 		}
 		
 		catch(Exception ex)
 		{
 			throw new Exception(ex.getMessage()); //here throw is used to just send back exception msg.
+		
 
 		}
 	
