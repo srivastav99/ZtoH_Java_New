@@ -1,7 +1,7 @@
 package TestQS;
 
 import java.util.Scanner;
-
+//Finding occurance of a character in a string without using loop
 public class String1_OccuranceOfCharWithoutLoop {
 
 	public static void main(String[] args) {

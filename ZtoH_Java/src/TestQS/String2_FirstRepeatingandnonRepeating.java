@@ -1,6 +1,6 @@
 package TestQS;
 
-
+//Finding first repeating and non-repeating character in the string 
 public class String2_FirstRepeatingandnonRepeating {
 
 	public static void main(String[] args) {
