@@ -6,8 +6,8 @@ public class Arrays1_Anagram {
 
 	public static void main(String[] args) {
 		
-		String s1 = "silent";
-		String s2 = "listen";
+		String s1 = "aaa";
+		String s2 = "abc";
 		
 		boolean flag=true;
 		//comparing length of two strings
