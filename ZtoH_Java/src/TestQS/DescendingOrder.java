@@ -5,6 +5,8 @@ public class DescendingOrder {
 
 	public static void main(String[] args) {
 		
+		//without using in-built methods
+		
 		String[] s = {"abc","bcd","cde","abcd","abe"};
 		int maxLen = s[0].length();
 		for (int i = 1; i < s.length; i++) {
@@ -26,7 +28,7 @@ public class DescendingOrder {
 					if(k<c2.length && k<c1.length)
 					
 					{
-						if (c1[k]>c2[k] && k==0) { 
+						if (c1[k]<c2[k] && k==0) { 
 								String str = s[i];
 								 s[i] = s[j];
 								 s[j] = str;
@@ -34,7 +36,7 @@ public class DescendingOrder {
 						
 						if(k>0) {
 							if(c1[k-1]==c2[k-1]) {
-								if (c1[k]>c2[k]) { 
+								if (c1[k]<c2[k]) { 
 									String str = s[i];
 									 s[i] = s[j];
 									 s[j] = str;
@@ -55,8 +57,32 @@ public class DescendingOrder {
 			
 		for (int i = 0; i < s.length; i++) {
 			System.out.println(s[i]);
-		}	
-
+		}
+		
+		
+		
+		//using in-built methods
+		/*
+		String[] s = {"abc","bcd","cde","abcd","abe"};
+		
+		for (int i = 0; i < s.length-1; i++) {
+			for (int j = i+1; j < s.length; j++) {
+				if ((s[i].compareTo(s[j])<0)) {
+					
+					String temp = s[i];
+					s[i] = s[j];
+					s[j] = temp;
+					
+				}
+			}
+		}
+		
+		for (int i = 0; i < s.length; i++) {
+			System.out.println(s[i]);
+		}
+	*/
+		
+		
 	}
 
 }
