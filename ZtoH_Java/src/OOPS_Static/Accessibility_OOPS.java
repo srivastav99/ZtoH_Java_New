@@ -52,3 +52,17 @@ public class Accessibility_OOPS {
 	}
 
 }
+
+class accessing{
+	
+	//Accessibility_OOPS.a=10;//gives error(Syntax error on token "a", VariableDeclaratorId expected after this token)
+	public void normal_m() {
+		//b=10;//gives error as b is a non-static global variable of class Accessibility_OOPS and is accessible only in that class
+		//Accessibility_OOPS.b=10;//Gives error as we cannot access non-static global variables of one class in another class
+		Accessibility_OOPS.a=10;//Since a is static we can access it in this class even though it is defined in another class.
+		
+		
+	}
+	
+	
+}
