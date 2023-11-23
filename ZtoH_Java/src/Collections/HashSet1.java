@@ -59,7 +59,17 @@ public class HashSet1 {
 		
 		System.out.println("Is the HashSet s empty:"+s.isEmpty());//Checks if given HashSet is empty or not
 		
-		
+		/*
+		System.out.print("Printing 's' hashset with normal for loop:");
+		for (int i = 0; i < s.size(); i++) {
+			System.out.print(s.get(i)+" "); //gives error as hashset doesnot have .get() method as it does not store the insertion order of the elements.
+		}
+		System.out.println();
+		*/
+		System.out.print("Printing 's' hashset with for-each loop:");
+		for (Integer i : s) {
+			System.out.print(i+" ");
+		}
 		
 		/*
 		s.clear();//Clears all the data inside the HashSet

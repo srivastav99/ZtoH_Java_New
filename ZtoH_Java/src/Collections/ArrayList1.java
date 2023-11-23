@@ -2,6 +2,7 @@ package Collections;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 
 
@@ -70,7 +71,15 @@ public class ArrayList1 {
 		
 		System.out.println("Runtime class of Object a:"+a.getClass());//Returns Runtime class of specified Object
 		
-		
+		System.out.print("Printing 'a' list with normal for loop:");
+		for (int i = 0; i < a.size(); i++) {
+			System.out.print(a.get(i)+" ");
+		}
+		System.out.println();
+		System.out.print("Printing 'a' list with for-each loop:");
+		for (Integer i : a) {
+			System.out.print(i+" ");
+		}
 		
 		/*
 		a.clear();//Clears all the data inside the ArrayList

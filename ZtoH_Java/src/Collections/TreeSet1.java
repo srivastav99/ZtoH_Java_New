@@ -60,6 +60,18 @@ public class TreeSet1 {
 		System.out.println("Is the TreeSet ts empty:"+ts.isEmpty());//Checks if given TreeSet is empty or not
 		
 		
+		/*
+		System.out.print("Printing 's' hashset with normal for loop:");
+		for (int i = 0; i < ts.size(); i++) {
+			System.out.print(ts.get(i)+" "); //gives error as treeset doesnot have .get() method as it does not store the insertion order of the elements.
+		}
+		System.out.println();
+		*/
+		
+		System.out.print("Printing 'ts' hashset with for-each loop:");
+		for (Integer i : ts) {
+			System.out.print(i+" ");
+		}
 		
 		/*
 		ts.clear();//Clears all the data inside the TreeSet
