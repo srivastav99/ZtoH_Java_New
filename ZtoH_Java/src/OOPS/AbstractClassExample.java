@@ -39,6 +39,7 @@ abstract class C1{
 	
 	void m1() { 
 		
+		//C1 obj = new C1();//Gives error(Cannot instantiate the type C1)as we cannot create an object of abstract class.
 		System.out.println("Concrete method of abstract class");
 	}
 	
